@@ -10,7 +10,30 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val view = ActivityMainBinding.inflate(LayoutInflater.from(this))
-        val adapter = DataAdapter(listOf("First", "Second", "Third", "Four", "Five", "First", "Second", "Third", "Four", "Five"))
+        val adapter = DataAdapter(
+            listOf(
+                "First",
+                "Second",
+                "Third",
+                "Four",
+                "Five",
+                "First",
+                "Second",
+                "Third",
+                "Four",
+                "Five",
+                "First",
+                "Second",
+                "Third",
+                "Four",
+                "Five",
+                "First",
+                "Second",
+                "Third",
+                "Four",
+                "Five"
+            )
+        )
         view.rvList.layoutManager = LinearLayoutManager(this)
         view.rvList.adapter = adapter
         setContentView(view.root)

@@ -36,10 +36,10 @@ class PanelViewHolder(
 
     private fun invalidateVisibility() {
         if (isExpand) {
-            binding.ivToggle.rotation = 180f
+            binding.ivToggle.rotation = 0f
             binding.llContent.visibility = View.VISIBLE
         } else {
-            binding.ivToggle.rotation = 0f
+            binding.ivToggle.rotation = -90f
             binding.llContent.visibility = View.GONE
         }
     }
